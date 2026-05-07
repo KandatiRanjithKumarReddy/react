@@ -30,7 +30,7 @@ function Usereff() {
     //current value of reference is stored in heap 
     // and it is same for every render;
     //{current : Ref #400 address in heap}
-    //2nd Render {current : Ref #400 address in heap}
+    //2nd Render {current : Ref #400 address in heap
     list.push(reference);
     if (list.length === 2) {
         console.log(list);
