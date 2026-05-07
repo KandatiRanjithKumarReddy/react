@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 
 // function Usereff() {
@@ -31,11 +31,14 @@ function Usereff() {
     // and it is same for every render;
     //{current : Ref #400 address in heap}
     //2nd Render {current : Ref #400 address in heap
-    list.push(reference);
-    if (list.length === 2) {
-        console.log(list);
-        console.log(list[0] === list[1])
-    }
+    
+    useEffect(() => {
+        list.push(reference);
+        if (list.length === 2) {
+            console.log(list);
+            console.log(list[0] === list[1])
+        }
+    }, [])
     return (
         <div>
             <h1>Useref Hook</h1>
