@@ -17,14 +17,14 @@ const Use_effect = lazy(() => import('./Components/Use_effect'))
 const Two_way_binding = lazy(() => import('./Components/Two_way_binding'))
 const Zustand = lazy(() => import('./Components/Zustand'))
 const React_hook_form = lazy(() => import('./Components/React_hook_form').then(module => ({ default: module.React_hook_form })))
-
+import Useref from './Components/Usereff'
 function App() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <>
         {/* <Zustand /> */}
         
-        <RR />
+        {/* <RR />
         <Routes>
           <Route path='/' element={<h1>This Is Home Page!</h1>} />
           <Route path='/RR1' element={<RR1 />} />
@@ -33,7 +33,7 @@ function App() {
           <Route path='/Dispalyusers' element={<Display />} />
 
           <Route path='*' element={<h1>404 - Page Not Found</h1>} />
-        </Routes> 
+        </Routes>  */}
 
 
         {/* <DataProvider>
@@ -46,6 +46,8 @@ function App() {
         {/* <Use_effect/> */}
         {/* <Two_way_binding/> */}
         {/* <React_hook_form/> */}
+        <Useref/>
+
 
 
         
