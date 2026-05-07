@@ -27,8 +27,10 @@ function Usereff() {
     const [count, setCount] = useState(0);
     console.log("Component Rendered");
     const reference= useRef({name: "ranjith Kumar reddy", age: 21 });
-    //1st Render User = #400 address in heap;
-    //2nd Render User = #500 address in heap;
+    //current value of reference is stored in heap 
+    // and it is same for every render;
+    //{current : Ref #400 address in heap}
+    //2nd Render {current : Ref #400 address in heap}
     list.push(reference);
     if (list.length === 2) {
         console.log(list);
