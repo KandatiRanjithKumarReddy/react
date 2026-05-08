@@ -27,6 +27,8 @@ function Usecallback() {
     const [state, setState] = useState(0);
     //usecallback(fun,darray):canches the function and 
     //return the same function until the dependency array changes 
+    //useCallback memoizes a function.
+//It prevents a function from being recreated on every render.
     const temp = useCallback(() => {
         setState((state) => state + 1);
     }, [state < 2 ?0:state]);
