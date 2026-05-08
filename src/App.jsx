@@ -18,6 +18,7 @@ const Two_way_binding = lazy(() => import('./Components/Two_way_binding'))
 const Zustand = lazy(() => import('./Components/Zustand'))
 const React_hook_form = lazy(() => import('./Components/React_hook_form').then(module => ({ default: module.React_hook_form })))
 import Useref from './Components/Usereff'
+import Usecallback from './Components/Usecallback' 
 function App() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
@@ -46,7 +47,7 @@ function App() {
         {/* <Use_effect/> */}
         {/* <Two_way_binding/> */}
         {/* <React_hook_form/> */}
-        <Useref/>
+        <Usecallback/>
 
 
 
