@@ -19,6 +19,8 @@ const Zustand = lazy(() => import('./Components/Zustand'))
 const React_hook_form = lazy(() => import('./Components/React_hook_form').then(module => ({ default: module.React_hook_form })))
 import Useref from './Components/Usereff'
 import Usecallback from './Components/Usecallback' 
+import Demo from './Components/Demo'
+
 function App() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
@@ -36,7 +38,6 @@ function App() {
           <Route path='*' element={<h1>404 - Page Not Found</h1>} />
         </Routes>  */}
 
-
         {/* <DataProvider>
           <FromContext />
         </DataProvider> */}
@@ -47,11 +48,8 @@ function App() {
         {/* <Use_effect/> */}
         {/* <Two_way_binding/> */}
         {/* <React_hook_form/> */}
-        <Usecallback/>
-
-
-
-        
+        {/* <Usecallback/> */}
+        <Demo/>        
       </>
     </Suspense>
   )
