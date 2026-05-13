@@ -51,5 +51,3 @@ function Usereff() {
 export default Usereff
 
 
-//Store a mutable value that does NOT cause re-render
-// Access and manipulate DOM elements directly
