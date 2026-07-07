@@ -8,7 +8,7 @@ export default function Zustand() {
         <button style={{margin: '10px'}} onClick={increment}>+</button> 
         <button style={{margin: '10px'}} onClick={decrement}>-</button> 
         <h1>Zustand Counter: {count}</h1>
-
+        
     </div>
   )
 }

@@ -32,3 +32,20 @@ function Display() {
 }
 
 export default Display
+
+
+// Component Loads
+//     ↓
+// useEffect Runs
+//     ↓
+// getData() Called
+//     ↓
+// axios.get() Fetches Users
+//     ↓
+// Setresponse(data)
+//     ↓
+// State Updates
+//     ↓
+// Component Re-renders
+//     ↓
+// map() Displays User Names

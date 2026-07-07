@@ -48,10 +48,6 @@ function App() {
         {/* <Two_way_binding/> */}
         {/* <React_hook_form/> */}
         <Usecallback/>
-
-
-
-        
       </>
     </Suspense>
   )
