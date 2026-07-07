@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function Display() {
     const [response, Setresponse] = useState([]);
-    useEffect(() => {
+    useEffect(() => { 
         const getData = async () => {
             try {
                 const responses = await axios.get("https://jsonplaceholder.typicode.com/users")
