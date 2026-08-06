@@ -22,8 +22,8 @@ export const useData = () => useContext(DataContext);
 // *****
 // Create Context
 // Provider Function
-// Custom Hook
 // Custom Component - extrenal component that uses data (ex:FromContext.jsx)
+// Custom Hook
 //****
 
 // 1️⃣ createContext()        → creates the box
