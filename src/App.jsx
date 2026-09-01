@@ -42,12 +42,13 @@ function App() {
         </DataProvider> */}
         
         {/* <Display /> */}
-        {/* <Lp name="Ranjith Reddy"/> */}
+        <Lp/>
+        <Lp name="ranjith" age='21'/>
         {/* <Use_state /> */}
         {/* <Use_effect/> */}
         {/* <Two_way_binding/> */}
         {/* <React_hook_form/> */}
-        <Usecallback/>
+        {/* <Usecallback/> */}
       </>
     </Suspense>
   )
